@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Diet Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kidney Health</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="disease-info.html">Disease Information</a></li>
+                <li><a href="symptoms.html">Symptoms</a></li>
+                <li><a href="risk-factors.html">Risk Factors</a></li>
+                <li><a href="treatments.html">Medical Treatments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Personalized Diet Plan</h2>
+        <form id="diet-form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+            
+            <label for="medication">Current Medication:</label>
+            <input type="text" id="medication" name="medication" required><br>
+            
+            <label for="allergies">Food Allergies:</label>
+            <input type="text" id="allergies" name="allergies" required><br>
+            
+            <button type="button" onclick="generateDietPlan()">Generate Diet Plan</button>
+        </form>
+        <div id="diet-plan"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kidney Health</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
